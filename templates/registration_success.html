@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/success.css">
+    <title>Aadhaar card</title>
+</head>
+<body>
+    <img class="success_emblem" src="../static/images/logo.png" alt="">
+    <h1 class="success_gov">Unique Identification Authority of India</h1>
+    <p class="success_gov2">Government of India</p>
+    <img class="success_Aadhar_logo" src="../static/images/Aadhar_logo.png" alt="">
+
+    <div class="success_menubar">
+        <h1 class="success_title">E-Aadhar</h1>
+    </div>
+
+    <div class="card">
+        <header>
+            <img class="logo" src="../static/images/logo.png" alt="">
+            <img class="Aadhar_logo" src="../static/images/Aadhar_logo.png" alt="">
+
+            
+            <div class="heading">
+                    <h1 class="gov">ಭಾರತ ಸರ್ಕಾರ</h1>
+                    <h1 class="gov">Government of India</h1>
+            </div>
+            <div class="whitespace">
+            </div>
+
+            <div class="greenspace">
+                <h1 class="gov">ಭಾರತದ ವಿಶಿಷ್ಟ ಗುರುತಿನ ಪ್ರಾಧಿಕಾರ</h1>
+                <h1 class="gov">Unique Identification Authority of India</h1>
+        </div>
+        <div class="user_details">
+            <p class="Enrollment_no">Enrollment No : 08080080888808800</p>
+            <p>To</p>
+            <p>{{ name }}</p>
+            <p>Father Name : {{ parent_name }}</p>
+            <p>ಜನ್ಮ ದಿನಾಂಕ / DOB: {{ dob }}</p>
+            <p>{{ gender }}</p>
+            <p>{{ address }}</p>
+            <p>{{ mobile }}</p>
+            <img class="qrcode" src="../static/images/MyQRCode.png.png" alt="">
+        </div>
+        <div class="barcode"><img src="../static/images/MyQRCode.png" alt=""></div>
+
+        <h3>ನಿಮ್ಮ <span> ಆಧಾರ್ </span>ಸಂಖ್ಯೆ / Your Aadhaar No :</h3>
+
+        <h1 id="btm">{{ random_number }}</h1>
+        <div class="middle">
+            <h1>ನನ್ನ <span> ಆಧಾರ್</span>, ನನ್ನ ಗುರುತು</h1>
+        </div>
+        
+
+        <div class="bottom">
+            <h1></h1>
+        </div>
+
+        <hr>
+
+            <nav>
+                <img class="logo2" src="../static/images/logo.png" alt="">
+                <ul>
+                    <li ><a href="" id="h">ಭಾರತ ಸರ್ಕಾರ </a></li> <br>
+                    <li ><a href="" id="e">Government of India</a></li>
+                </ul>
+                <img class="Aadhar_logo2" src="../static/images/Aadhar_logo.png" alt="">
+
+            </nav>
+
+        </header>
+        <section>
+            <img class="pic" src="../static/images/OIP.jpg" alt="">
+            <div class="detail">
+                <p>{{ name }}</p>
+                <p>ಜನ್ಮ ದಿನಾಂಕ  / DOB: {{ dob }}</p>
+                <p>{{ gender }}</p>
+
+            </div>
+            <div class="bottombarcode"><img src="../static/images/MyQRCode.png" alt=""></div>
+
+        </section>
+        <h1 id="btm2">{{ random_number }}</h1>
+        <div class="bottom2">
+            <h1>ನನ್ನ<span>ಆಧಾರ್</span>, ನನ್ನ ಗುರುತು</h1>
+        </div>
+
+
+
+
+
+    </div>
+
+    
+</body>
+</html>
