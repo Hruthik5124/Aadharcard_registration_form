@@ -31,7 +31,7 @@
                             </div>
                             <div class="card-box">
                                 <span class="details">Date of Birth</span>
-                                <input type="date" id="dob" name="dob" placeholder="Enter your Fathers name">
+                                <input type="date" id="dob" name="dob">
                             </div>
                             <div class="card-box">
                                 <span class="details">State</span><br>
@@ -84,14 +84,14 @@
                                 <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required placeholder="Enter Your Mobile Number">
                             </div>
                         </div>
-                        <div class="circal-form">
-                            <span class="circal-title" id="gender" name="gender" >Gender</span>
-                            <div class="category">
-                                <input type="radio" name="gender">Male
-                                <input type="radio" name="gender">Female
-                                <input type="radio" name="gender">Other
-                            </div>
-                        </div>
+                        <span class="details">Gender</span><br>
+                                <select id="gender" name="gender">
+                                    <option value="">Select</option>
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </span>
                         <div class="button">
                             <input type="submit" value="Get My E-Aadhar">
                         </div>
