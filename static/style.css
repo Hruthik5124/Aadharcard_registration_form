@@ -100,6 +100,7 @@ form .buttton input:hover{
 
 textarea {
     resize: none;
+    border-radius: 5px;
 }
 
 select {

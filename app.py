@@ -21,6 +21,7 @@ class User(db.Model):
     address = db.Column(db.Text, nullable=False)
     parent_name = db.Column(db.String(100), nullable=False)
     gender = db.Column(db.String(10), nullable=False)
+    state = db.Column(db.String(30), nullable=False)
     random_number = db.Column(db.String(12), nullable=False)
     
 
@@ -33,13 +34,14 @@ def registration_form():
         parent_name = request.form['parent_name']
         gender = request.form['gender']
         mobile = request.form['mobile']
+        state = request.form['state']
 
         existing_user = User.query.filter_by(mobile=mobile).first()
         if existing_user:
             return render_template('user_already_exist.html')
 
         random_number = generate_random_number(mobile)
-        new_user = User(name=name, dob=dob, address=address, parent_name=parent_name, gender=gender, mobile=mobile, random_number=random_number)
+        new_user = User(name=name, dob=dob, address=address, parent_name=parent_name, gender=gender, mobile=mobile, random_number=random_number, state=state)
         db.session.add(new_user)
         db.session.commit()
         # Encoding data using make() function

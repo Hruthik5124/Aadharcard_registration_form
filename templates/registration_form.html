@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../static/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aadhar Registration Form</title>
+    <title>Aadhaar Registration Form</title>
 </head>
 <body>
     <img class="emblem" src="../static/images/logo.png" alt="">
@@ -13,7 +13,7 @@
     <img class="Aadhar_logo" src="../static/images/Aadhar_logo.png" alt="">
 
     <div class="menubar">
-        <h1 class="title">Aadhar Registration Form</h1>
+        <h1 class="title">Aadhaar Registration Form</h1>
     </div>
 
             <div class="container">
@@ -28,6 +28,16 @@
                             <div class="card-box">
                                 <span class="details">Father's Name</span>
                                 <input type="text" id="parent_name" name="parent_name" placeholder="Enter your Father's name">
+                            </div>
+                            <div class="card-box">
+                                <span class="details">Gender</span><br>
+                                <select id="gender" name="gender">
+                                    <option value="">Select</option>
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </span>
                             </div>
                             <div class="card-box">
                                 <span class="details">Date of Birth</span>
@@ -84,14 +94,6 @@
                                 <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required placeholder="Enter Your Mobile Number">
                             </div>
                         </div>
-                        <span class="details">Gender</span><br>
-                                <select id="gender" name="gender">
-                                    <option value="">Select</option>
-                                    <option value="Male">Male</option>
-                                    <option value="Female">Female</option>
-                                    <option value="Other">Other</option>
-                                </select>
-                            </span>
                         <div class="button">
                             <input type="submit" value="Get My E-Aadhar">
                         </div>
